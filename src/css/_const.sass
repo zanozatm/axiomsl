@@ -1,0 +1,80 @@
+$white          : #ffffff
+$gray-lighten   : #d8d8d8
+$color-secondary: #ff3e81
+$gray-darker    : #757575
+$gray-dark      : #999999
+$gray-darken    : #7d7d7d
+$cerulean       : #0277bd
+$black          : #000000
+$gray-light     : #d6d5d5
+$black-26       : rgba(0, 0, 0, 0.26)
+$gray-lighter   : #dddddd
+$gray           : #cccccc
+$gray-lightest  : #eeeeee
+$gray-darkest   : #4d4d4e
+
+$font-family  : Roboto
+
+
+%font-style-default  
+  font-family: $font-family
+  font-weight: normal
+  font-style: normal
+  font-stretch: normal
+  line-height: normal
+  letter-spacing: normal
+  text-align: left
+
+/* Text styles */
+%font-style-7
+  @extend %font-style-default
+  font-size: 35px
+  letter-spacing: -0.4px 
+  color: rgba(255, 255, 255, 0.87)
+
+
+%font-style-8 
+  @extend %font-style-default
+  font-size: 24px
+  color: $color-secondary
+
+
+%font-style 
+  @extend %font-style-default
+  font-size: 21px
+  color: $white
+
+
+%font-style-3 
+  @extend %font-style-default
+  font-size: 16px
+  letter-spacing: -0.1px
+  color: $gray-darkest
+
+
+%font-style-2 
+  @extend %font-style-default
+  font-size: 15px
+  color: $gray-darkest
+
+
+%font-style-5 
+  @extend %font-style-default
+  font-size: 14px
+  font-weight: 500
+  color: rgba(255, 255, 255, 0.87)
+
+
+%font-style-6 
+  @extend %font-style-default
+  font-size: 14px
+  color: rgba(255, 255, 255, 0.87)
+
+
+%font-style-4 
+  @extend %font-style-default
+  font-size: 13px
+  letter-spacing: -0.1px
+  color: $gray-dark
+
+
