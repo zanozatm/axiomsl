@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -52,8 +53,8 @@ a, img, button {
   outline: none;
 }
 
-.alphabet__index, .md__container .toolbar, .actions, .userinfo, .userinfo .userinfo__text a {
-  font-family: Roboto;
+.user__info .avatar__name, .alphabet__index, .md__container .toolbar, .contact__phone, .actions, .userinfo, .userinfo .userinfo__text a, .small_text {
+  font-family: "Roboto", sans-serif;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -63,6 +64,12 @@ a, img, button {
 }
 
 /* Text styles */
+.user__info .avatar__name {
+  font-size: 35px;
+  letter-spacing: -0.4px;
+  color: rgba(255, 255, 255, 0.87);
+}
+
 .alphabet__index {
   font-size: 24px;
   color: #ff3e81;
@@ -71,6 +78,12 @@ a, img, button {
 .md__container .toolbar {
   font-size: 21px;
   color: #ffffff;
+}
+
+.contact__phone {
+  font-size: 16px;
+  letter-spacing: -0.1px;
+  color: #4d4d4e;
 }
 
 .actions {
@@ -83,8 +96,14 @@ a, img, button {
   color: rgba(255, 255, 255, 0.87);
 }
 
+.small_text {
+  font-size: 13px;
+  letter-spacing: -0.1px;
+  color: #999999;
+}
+
 body {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
 }
 
 .page__container {
@@ -226,12 +245,14 @@ body {
 .md__container--content {
   padding: 18px 17px;
   margin-top: 64px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .friends__lists {
   background-color: #ffffff;
-  min-width: 400px;
-  width: calc( 100%/5*3);
+  min-width: 350px;
+  width: calc( 100%/5*3 - 14px);
   border-radius: 2px;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
   height: calc( 100vh - 100px);
@@ -285,4 +306,89 @@ body {
   flex-direction: column;
   align-items: flex-start;
   overflow: hidden;
+}
+
+.user__info {
+  background-color: #ffffff;
+  min-width: 350px;
+  width: 432px;
+  border-radius: 2px;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  margin-left: 14px;
+}
+
+.user__info--avatar {
+  background: url("/img/rectangle-97.svg") no-repeat center;
+  background-size: cover;
+  height: 246px;
+  padding: 25px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.user__info--avatar .avatar__icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user__info--contacts {
+  /*padding: 22px 0 22px */
+}
+
+.button__back {
+  background: url("/img/arrow-back.svg") no-repeat center;
+  background-size: cover;
+  height: 16px;
+  width: 16px;
+}
+
+.button__operations {
+  background: url("/img/more-vert-2.svg") no-repeat center;
+  background-size: cover;
+  height: 18px;
+  width: 4px;
+  margin-left: 30px;
+}
+
+.button__edit {
+  background: url("/img/create.svg") no-repeat center;
+  background-size: cover;
+  height: 18px;
+  width: 18px;
+}
+
+.contact__block {
+  display: flex;
+}
+
+.contact__block:first-child .contact__content {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.contact__icons {
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  margin-top: 44px;
+}
+
+.contact__content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 23px 23px 0 0;
+}
+
+.contact__item {
+  margin: 16px 0;
+}
+
+.contact__item--phone {
+  background: url("/img/hangout.svg") no-repeat center right;
+}
+
+.contact__item--address {
+  width: 180px;
 }
