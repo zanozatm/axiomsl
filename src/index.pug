@@ -71,11 +71,14 @@ html(lang='en')
 										span.item__text Updates
 				main.md__container.md__theme--default
 					div.toolbar
-						button.ax__button.button__icon
-							i.button__icon--menu
-								img(src='/img/menu.svg')
-						span.toolbar__title Title
-					
+						div.page__title
+							button.ax__button.button__icon
+								i.button__icon--menu
+									img(src='/img/menu.svg')
+							span.toolbar__title Title
+						div.page__action
+							button.ax__button.button__refresh
+							button.ax__button.button__operations
 					div.md__container--content
 						div.friends__lists
 							div.alphabetical__list
@@ -89,7 +92,7 @@ html(lang='en')
 									li.friend
 										img.friend__thumb(src='/img/oval-24_6.svg')
 										span.friend__name Jennifer Carpenter
-									li.friend
+									li.friend.active
 										img.friend__thumb(src='/img/avatar_2@2x.jpg')
 										span.friend__name James Connors
 									li.friend
@@ -142,48 +145,51 @@ html(lang='en')
 										img.friend__thumb(src='/img/oval-24_8@2x.png')
 										span.friend__name Marie Fuller
 						div#userid.user__info
-							div.user__info--avatar
-								div.avatar__icons
-									button.ax__button.button__back
-									div.more_operations
-										button.ax__button.button__edit
-										button.ax__button.button__operations
-								div.avatar__name
-									span James Connors
-							div.user__info--contacts
-								div.contact__block
-									div.contact__icons
-										i.icon__phone
-											img(src='/img/call.svg')
-									div.contact__content
-										div.contact__item.contact__item--phone
-											p (650) 555-1234
-											span.small_text Mobile
-										div.contact__item.contact__item--phone
-											p (323) 555-6789
-											span.small_text Work
-								div.contact__block
-									div.contact__icons
-										i.icon__mail
-											img(src='/img/email.svg')
-									div.contact__content
-										div.contact__item
-											p aliconnors@example.com
-											span.small_text Personal
-										div.contact__item
-											p ali_connors@example.com
-											span.small_text Work
-								div.contact__block
-									div.contact__icons
-										i.icon__location
-											img(src='/img/place.svg')
-									div.contact__content
-										div.contact__item.contact__item--address
-											p 2000 SW 1st Ave#[br]San Francisco, CA 94112
-											span.small_text Home
-										div.contact__item.contact__item--address
-											p 1600 Amphitheatre Pkwy Mountain View, CA 94043
-											span.small_text Work
+							div.user__wrapper
+								div.user__info--avatar
+									div.avatar__icons
+										button.ax__button.button__back
+										div.more_operations
+											button.ax__button.button__edit
+											button.ax__button.button__operations
+									div.avatar__name
+										span James Connors
+								div.user__info--contacts
+									div.contact__block
+										div.contact__icons
+											i.icon__phone
+												img(src='/img/call.svg')
+										div.contact__content
+											div.contact__item.contact__item--phone
+												p (650) 555-1234
+												span.small_text Mobile
+											div.contact__item.contact__item--phone
+												p (323) 555-6789
+												span.small_text Work
+									div.contact__block
+										div.contact__icons
+											i.icon__mail
+												img(src='/img/email.svg')
+										div.contact__content
+											div.contact__item
+												p aliconnors@example.com
+												span.small_text Personal
+											div.contact__item
+												p ali_connors@example.com
+												span.small_text Work
+									div.contact__block
+										div.contact__icons
+											i.icon__location
+												img(src='/img/place.svg')
+										div.contact__content
+											div.contact__item.contact__item--address
+												p 2000 SW 1st Ave#[br]San Francisco, CA 94112
+												span.small_text Home
+											div.contact__item.contact__item--address
+												p 1600 Amphitheatre Pkwy Mountain View, CA 94043
+												span.small_text Work
+									div.contact__edit
+										button.ax__button.button__edit--contact
 
 
 

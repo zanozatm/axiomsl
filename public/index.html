@@ -67,7 +67,13 @@
         </div>
         <main class="md__container md__theme--default">
           <div class="toolbar">
-            <button class="ax__button button__icon"><i class="button__icon--menu"><img src="/img/menu.svg"></i></button><span class="toolbar__title">Title</span>
+            <div class="page__title">
+              <button class="ax__button button__icon"><i class="button__icon--menu"><img src="/img/menu.svg"></i></button><span class="toolbar__title">Title</span>
+            </div>
+            <div class="page__action">
+              <button class="ax__button button__refresh"></button>
+              <button class="ax__button button__operations"></button>
+            </div>
           </div>
           <div class="md__container--content">
             <div class="friends__lists">
@@ -76,7 +82,7 @@
                 <ul class="friends__list">
                   <li class="friend"><img class="friend__thumb" src="/img/oval-24_3.svg"><span class="friend__name">Carolyn Campbell</span></li>
                   <li class="friend"><img class="friend__thumb" src="/img/oval-24_6.svg"><span class="friend__name">Jennifer Carpenter</span></li>
-                  <li class="friend"><img class="friend__thumb" src="/img/avatar_2@2x.jpg"><span class="friend__name">James Connors</span></li>
+                  <li class="friend active"><img class="friend__thumb" src="/img/avatar_2@2x.jpg"><span class="friend__name">James Connors</span></li>
                   <li class="friend"><img class="friend__thumb" src="/img/oval-24_9.svg"><span class="friend__name">Beverly Harris</span></li>
                 </ul>
               </div>
@@ -104,48 +110,53 @@
               </div>
             </div>
             <div class="user__info" id="userid">
-              <div class="user__info--avatar">
-                <div class="avatar__icons">
-                  <button class="ax__button button__back"></button>
-                  <div class="more_operations">
-                    <button class="ax__button button__edit"></button>
-                    <button class="ax__button button__operations"></button>
-                  </div>
-                </div>
-                <div class="avatar__name"><span>James Connors</span></div>
-              </div>
-              <div class="user__info--contacts">
-                <div class="contact__block">
-                  <div class="contact__icons"><i class="icon__phone"><img src="/img/call.svg"></i></div>
-                  <div class="contact__content">
-                    <div class="contact__item contact__item--phone">
-                      <p>(650) 555-1234</p><span class="small_text">Mobile</span>
-                    </div>
-                    <div class="contact__item contact__item--phone">
-                      <p>(323) 555-6789</p><span class="small_text">Work</span>
+              <div class="user__wrapper">
+                <div class="user__info--avatar">
+                  <div class="avatar__icons">
+                    <button class="ax__button button__back"></button>
+                    <div class="more_operations">
+                      <button class="ax__button button__edit"></button>
+                      <button class="ax__button button__operations"></button>
                     </div>
                   </div>
+                  <div class="avatar__name"><span>James Connors</span></div>
                 </div>
-                <div class="contact__block">
-                  <div class="contact__icons"><i class="icon__mail"><img src="/img/email.svg"></i></div>
-                  <div class="contact__content">
-                    <div class="contact__item">
-                      <p>aliconnors@example.com</p><span class="small_text">Personal</span>
-                    </div>
-                    <div class="contact__item">
-                      <p>ali_connors@example.com</p><span class="small_text">Work</span>
+                <div class="user__info--contacts">
+                  <div class="contact__block">
+                    <div class="contact__icons"><i class="icon__phone"><img src="/img/call.svg"></i></div>
+                    <div class="contact__content">
+                      <div class="contact__item contact__item--phone">
+                        <p>(650) 555-1234</p><span class="small_text">Mobile</span>
+                      </div>
+                      <div class="contact__item contact__item--phone">
+                        <p>(323) 555-6789</p><span class="small_text">Work</span>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="contact__block">
-                  <div class="contact__icons"><i class="icon__location"><img src="/img/place.svg"></i></div>
-                  <div class="contact__content">
-                    <div class="contact__item contact__item--address">
-                      <p>2000 SW 1st Ave<br>San Francisco, CA 94112</p><span class="small_text">Home</span>
+                  <div class="contact__block">
+                    <div class="contact__icons"><i class="icon__mail"><img src="/img/email.svg"></i></div>
+                    <div class="contact__content">
+                      <div class="contact__item">
+                        <p>aliconnors@example.com</p><span class="small_text">Personal</span>
+                      </div>
+                      <div class="contact__item">
+                        <p>ali_connors@example.com</p><span class="small_text">Work</span>
+                      </div>
                     </div>
-                    <div class="contact__item contact__item--address">
-                      <p>1600 Amphitheatre Pkwy Mountain View, CA 94043</p><span class="small_text">Work</span>
+                  </div>
+                  <div class="contact__block">
+                    <div class="contact__icons"><i class="icon__location"><img src="/img/place.svg"></i></div>
+                    <div class="contact__content">
+                      <div class="contact__item contact__item--address">
+                        <p>2000 SW 1st Ave<br>San Francisco, CA 94112</p><span class="small_text">Home</span>
+                      </div>
+                      <div class="contact__item contact__item--address">
+                        <p>1600 Amphitheatre Pkwy Mountain View, CA 94043</p><span class="small_text">Work</span>
+                      </div>
                     </div>
+                  </div>
+                  <div class="contact__edit">
+                    <button class="ax__button button__edit--contact"></button>
                   </div>
                 </div>
               </div>
